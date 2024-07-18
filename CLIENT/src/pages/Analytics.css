@@ -1,0 +1,27 @@
+@keyframes countUp {
+    from {
+      content: '0';
+    }
+  }
+  
+  #anm::after {
+    content: '';
+    animation: countUp 1s steps(10, end);
+    animation-fill-mode: forwards;
+  }
+  
+  #anm:nth-child(1)::after {
+    content: '0';
+  }
+  
+  #anm:nth-child(2)::after {
+    content: '0';
+  }
+  
+  #anm:nth-child(3)::after {
+    content: '0';   
+  }
+  
+  h2:nth-child(4)::after {
+    content: '0';
+  }
